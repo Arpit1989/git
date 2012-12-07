@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+<title> Registration for RoR Team</title>
+<meta name="Ruby on Rails" content="registraions for the team">
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/style3.css" />
+
+</head>
+<body>
+<header>
+<div class="container">
+<div id="header">
+<h1>Registration for RoR</h1>
+</div>
+</div>
+<div id="wrapper">
+
+<form action="oops.html" autocomplete="on">
+<p>
+<label for="username" class="uname" data-icon="u">Your username</label>
+<input id="username" name="username" type="text" required="required" placeholder="myusername"/>
+
+<label for="email" class="email"> Your email address</label>
+<input id="email" name="email" type="email" required="required" placeholder="Your email adddress"/>
+</p>
+<p>
+<label for="password" class="password" > Your Password</label>
+<input id="password" name="password" type="password" required="required" placeholder="Min. 6 charc & Max. 12" min="5" max="12" />
+
+<label for="password" class="password" > Re-type Password</label>
+<input id="password" name="password" type="password" required="required" placeholder="Min. 6 charc & Max. 12" min="5" max="12" />
+</p>
+<p>
+<label for="age" class="age" > Your Age </label>
+<input id="age" name="age" type="number" required="required" placeholder="min age 18 to register" min="18" />
+</p>
+
+<p>
+<label for= "technology" class="tech" > Your Primary Technology</label>
+<input list="Technology" name="Technology">
+<datalist id="Technology">
+  <option value="Java">
+  <option value="Pl-Sql">
+  <option value="Vb.Net">
+  <option value="Linux">
+  <option value="Pearl">
+</datalist> 
+
+<p>
+<label for ="grade" class="grade" > Grade yourself on out of 10 scale </label>
+<input type="range" name="points" min="1" max="10" />
+</p>
+<p>
+<label for="description" name=" description" class="description"> Describe yourself in 160 words</label>
+</p>
+<div id="confinedspace">
+<p>
+
+<textarea name="describe" cols="35" rows="9" id="describe" reqiured="required" placeholder="start here"></textarea>
+</p>
+</div>
+<p class="login button"> 
+<input type="submit" value="Login" /> 
+</p>
+
+</div>
