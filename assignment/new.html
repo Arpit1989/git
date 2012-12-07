@@ -10,28 +10,53 @@
 <script src="jquery.js"></script>
 <script>
 $(document).ready(function(){
-  $("#button").click(function(){
-    $("p.hide").hide();
+  $("#button1").click(function(){
+    $("p.hide").toggle("slow");
   });
 });
 		
 </script>
- <script>
+<script>
 $(document).ready(function(){
-	$("#button").dblclick(function(){
-		$("p.hide").show();
+	$("p:first").dblclick(function(){
+		$(this).hide("slow");
+		
 	});
 });
 </script>
 <script>
 $(document).ready(function(){
-	$("p:first").mouseenter(function(){
-		$(this).hide();
-		alert("hello");
+	$("#button").click(function(){
+		$("#div1").fadeOut();
+		$("#div2").fadeOut("slow");
+		$("#div3").fadeOut(3000);
+		$("#div4").fadeOut(4000);
+		$("#div5").fadeOut(5000);
 	});
 });
-</script>	
 
+</script>
+<!-- <script>
+$(document).ready(function(){
+  $("#button").click(function(){
+    $("#div1").fadeOut();
+    $("#div2").fadeOut("slow");
+    $("#div3").fadeOut(3000);
+  });
+});
+</script> -->
+	
+<!-- works fine ok tested <script>
+$(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color","#cccccc");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color","#ffffff");
+  });
+});
+</script>	
+-->
 </head>
 <body>
 <header>
@@ -43,22 +68,23 @@ $(document).ready(function(){
 <div id="wrapper">
 
 <form action="oops.html" autocomplete="on">
+
 <p>
 <label for="username" class="uname" data-icon="u">Your username</label>
 <input id="username" name="username" type="text" required="required" placeholder="myusername"/>
 </p>
-<p class="hide">
+<p>
 <label for="email" class="email"> Your email address</label>
 <input id="email" name="email" type="email" required="required" placeholder="Your email adddress"/>
 </p>
-<p class="hide">
+<p>
 <label for="password" class="password" id="test" > Your Password</label>
 <input id="password" name="password" type="password" required="required" placeholder="Min. 6 charc & Max. 12" min="5" max="12" />
 
 <label for="password" class="password" > Re-type Password</label>
 <input id="password" name="password" type="password" required="required" placeholder="Min. 6 charc & Max. 12" min="5" max="12" />
 </p>
-<p>
+<p class="hide">
 <label for="age" class="age" > Your Age </label>
 <input id="age" name="age" class="age" type="number" required="required" placeholder="min age 18 to register" min="18" />
 </p>
@@ -73,7 +99,7 @@ $(document).ready(function(){
   <option value="Linux">
   <option value="Pearl">
 </datalist> 
-
+</p>
 <p>
 <label for="description" name=" description" class="description"> Describe yourself in 160 words</label>
 </p>
@@ -88,10 +114,20 @@ $(document).ready(function(){
 <input type="range" name="points" min="1" max="10" />
 </p>
 
-<button id="button"> Hide my age </button>
+<button id="button1"> Hide my age </button>
 <p class="login button"> 
 <input type="submit" value="Login" /> 
 </p>
+</form>
+
+<button id="button">click</button>
+<div id="div1">A</div>
+<div id="div2">R</div>
+<div id="div3">P</div>
+<div id="div4">I</div>
+<div id="div5">T</div>
 
 
 </div>
+</body>
+</html>
