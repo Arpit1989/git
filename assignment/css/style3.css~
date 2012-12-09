@@ -103,7 +103,7 @@ input {
 }
 
 /* all the input except submit and checkbox */
-#wrapper input:([type="range"]){
+#wrapper input:not([type="range"]){
 	width: 92%;
 	margin-top: 4px;
 	padding: 10px 5px 10px 32px;	

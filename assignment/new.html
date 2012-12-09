@@ -4,6 +4,7 @@
 <meta name="Ruby on Rails" content="registraions for the team">
 <link rel="stylesheet" type="text/css" href="css/demo.css" />
 <link rel="stylesheet" type="text/css" href="css/style3.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.css" />
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
 </script>
@@ -36,6 +37,13 @@ $(document).ready(function(){
 });
 
 </script>
+<script>
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+        });
+    });
+</script>
 <!-- <script>
 $(document).ready(function(){
   $("#button").click(function(){
@@ -57,18 +65,45 @@ $(document).ready(function(){
 });
 </script>	
 -->
+<script>
+document.write("<h2> Hi fill in the form </h2>");
+</script>
+<script>
+function openwin(){
+var w=window.open();
+w.document.write("<h1>This is DOM Funda</h1>");
+w.document.close();
+}
+</script>
+<script>
+function createDoc()
+{
+
+var doc=document.open("text/html","replace");
+var txt="<!DOCTYPE html><html><body>Learning about the HTML DOM is fun!</body></html>";
+doc.write(txt);
+doc.close();
+}
+
+</script>
 </head>
 <body>
 <header>
 <div class="container">
 <div id="header">
 <h1>Registration for RoR</h1>
+
 </div>
 </div>
+    <div id="int">
+    <div id="flip" >Click here for instruction</div>
+    <div id="panel">Read me </div>
+    </div>
+
+
 <div id="wrapper">
-
-<form action="oops.html" autocomplete="on">
-
+<form name="Sample" action="oops.html" autocomplete="on">
+<a base href="https://www.google.com">Google me!</a>
 <p>
 <label for="username" class="uname" data-icon="u">Your username</label>
 <input id="username" name="username" type="text" required="required" placeholder="myusername"/>
@@ -114,10 +149,18 @@ $(document).ready(function(){
 <input type="range" name="points" min="1" max="10" />
 </p>
 
+<p> Upload your image
+<input type="file" id="files" name="files[]" multiple />
+
+<output id="list"></output>
+
+</p>
+<button onclick="openwin()">For message!</button>
 <button id="button1"> Hide my age </button>
 <p class="login button"> 
 <input type="submit" value="Login" /> 
 </p>
+<input type="button" value="click me"  onclick="createDoc()">
 </form>
 
 <button id="button">click</button>
@@ -126,8 +169,24 @@ $(document).ready(function(){
 <div id="div3">P</div>
 <div id="div4">I</div>
 <div id="div5">T</div>
-
-
 </div>
+<p class="animate"> asadasdasdasfsdgdfgdsgsdg
+sdfggsf</p>
+<a name="asdadada">hrefasdad</a>
+
+<p>no of anchors,no of forms and innerhtml:
+<script>
+document.write(document.anchors.length);
+document.write(document.forms.length);
+document.write(document.forms[0].name);
+document.write(document.anchors[0].innerHTML);
+</script>
+<br>Document Last Modified:
+<script>
+document.write(document.lastModified);
+document.write(document.URL);
+</script>
+
+</p>
 </body>
 </html>

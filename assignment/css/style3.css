@@ -20,6 +20,10 @@
     font-style: normal;
 
 }
+#int{
+postion:absolute;
+left:200px ; top:200px;
+}
 /** The wrapper that will contain our two forms **/
 #wrapper{
 	width: 60%;
