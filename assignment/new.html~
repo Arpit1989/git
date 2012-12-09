@@ -68,13 +68,15 @@ $(document).ready(function(){
 <script>
 document.write("<h2> Hi fill in the form </h2>");
 </script>
+
 <script>
 function openwin(){
 var w=window.open();
-w.document.write("<h1>Hello World!</h1>");
+w.document.write("<h1>This is DOM Funda</h1>");
 w.document.close();
 }
 </script>
+
 <script>
 function createDoc()
 {
@@ -84,8 +86,15 @@ var txt="<!DOCTYPE html><html><body>Learning about the HTML DOM is fun!</body></
 doc.write(txt);
 doc.close();
 }
-
 </script>
+
+<script>
+function getvalue(){
+var x= document.getElementById("popup");
+alert(x.innerHTML);
+}
+</script>
+
 </head>
 <body>
 <header>
@@ -155,6 +164,7 @@ doc.close();
 <output id="list"></output>
 
 </p>
+<button id="popup" onclick="getvalue()">Click me </button>
 <button onclick="openwin()">For message!</button>
 <button id="button1"> Hide my age </button>
 <p class="login button"> 
@@ -172,7 +182,7 @@ doc.close();
 </div>
 <p class="animate"> asadasdasdasfsdgdfgdsgsdg
 sdfggsf</p>
-<a name="asdadada">hrefasdad</a>
+<a name="asdadada" ><u>hrefasdad</u></a>
 
 <p>no of anchors,no of forms and innerhtml:
 <script>
