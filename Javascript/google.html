@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<title> Google</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
+</script>
+<script src="jquery.js"></script>
+<script language="JavaScript" type="text/javascript">
+function search_google(){ 
+window.open("http://www.google.com/search?q="+document.search.query.value); 
+}
+</script>
+
+
+
+
+<head>
+
+
+</head>
+
+
+<body>
+
+<h1> Google Search </h1>
+<form name="search">
+<input type="text" name="query" value="">
+<input type="submit" value="Just Google It!" onClick="search_google()">
+</form>
+</body>
+</html>

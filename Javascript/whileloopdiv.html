@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function divisble()
+{
+
+    // What number shall we play up to?
+    var number = 100
+    var x=0
+    var y=0
+    var z=0    
+    // for the numbers 1 through 20,
+    var i=0    
+while (i<100){
+        i=i+1;
+    
+
+    // if the number is divisble by 3 and 2, write "FizzBuzz"
+    if ( i % 3 === 0 && i % 2 === 0 ) {
+    
+    z=z+1;
+    }
+
+    // if the number is divisible by 3, write "Fizz"
+    else if ( i % 3 === 0 ) {
+    
+    x=x+1;
+    }
+
+    // if the number is divisible by 2, write "Buzz"
+    else if ( i % 2 === 0 ) {
+    y=y+1;
+    }
+
+    // otherwise, write just the number
+    else {
+    
+    }
+}
+
+    document.writeln("b/w 1 to 100 total Numbers Div By 2:");
+    document.writeln(z+y);
+    document.writeln("b/w 1 to 100 total Numbers Div By 3:");
+    document.writeln(z+x);    
+    
+   }
+</script>
+
+
+</head>
+<body>
+<button onclick="divisble()">click</button>
+</body>
+</html>

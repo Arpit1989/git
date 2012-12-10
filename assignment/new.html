@@ -94,6 +94,21 @@ var x= document.getElementById("popup");
 alert(x.innerHTML);
 }
 </script>
+<script>
+function checkWordLen(obj){
+var Wordlen = 20;
+var len = obj.value.split(/[\s]+/);
+if ( len.length > Wordlen){
+alert("You have reached the limit of 200 words");
+obj.oldvalue = obj.value != obj.oldvalue?obj.value:obj.oldvalue;
+obj.value = obj.oldValue?obj.oldValue:"";
+	return false;
+}
+
+return true;
+}
+
+</script>
 
 </head>
 <body>
@@ -130,7 +145,7 @@ alert(x.innerHTML);
 </p>
 <p class="hide">
 <label for="age" class="age" > Your Age </label>
-<input id="age" name="age" class="age" type="number" required="required" placeholder="min age 18 to register" min="18" />
+<input id="age" name="age" class="age" type="number" required="required" placeholder="min age 18 to register" min="18" max="100" />
 </p>
 
 <p>
@@ -145,12 +160,12 @@ alert(x.innerHTML);
 </datalist> 
 </p>
 <p>
-<label for="description" name=" description" class="description"> Describe yourself in 160 words</label>
+<label for="description" name=" description" class="description"> Describe yourself in 200 words</label>
 </p>
 <div id="confinedspace">
 <p>
 
-<textarea name="describe" cols="35" rows="9" id="describe" reqiured="required" placeholder="start here"></textarea>
+<textarea name="describe" cols="35" rows="9" id="describe" onkeyup="checkWordLen(this);" reqiured="required" placeholder="start here"></textarea>
 </p>
 </div>
 <p>

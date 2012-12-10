@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script> 
+
+function CapitaliseAllText(obj) {
+	
+     var txt = $("#" + obj).val();
+     $("#" + obj).val(txt.toUpperCase());
+     
+	 document.write("<html><h1> "+txt+"</h1></html>");
+}
+</script> 
+
+</head>
+ 
+<body>
+<form>
+<input type="text" id="text1" onclick="CapitaliseAllText(this.form);"></input>
+</form>
+</body>
+</html>
