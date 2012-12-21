@@ -1,0 +1,6 @@
+There is company with number of users. 
+Every user has personal information for an example location, hobbies, interests.
+ Manager of that company creates the projects and assigns those projects to user. 
+One user can be part of more than one project.
+While creation of the project make sure that it has mandatory fileld NAME.
+ User can see list of the projects assign to them when the access the site.
