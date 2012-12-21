@@ -1,0 +1,32 @@
+        github_addresses GET    /github_addresses(.:format)          github_addresses#index
+                         POST   /github_addresses(.:format)          github_addresses#create
+      new_github_address GET    /github_addresses/new(.:format)      github_addresses#new
+     edit_github_address GET    /github_addresses/:id/edit(.:format) github_addresses#edit
+          github_address GET    /github_addresses/:id(.:format)      github_addresses#show
+                         PUT    /github_addresses/:id(.:format)      github_addresses#update
+                         DELETE /github_addresses/:id(.:format)      github_addresses#destroy
+          blog_addresses GET    /blog_addresses(.:format)            blog_addresses#index
+                         POST   /blog_addresses(.:format)            blog_addresses#create
+        new_blog_address GET    /blog_addresses/new(.:format)        blog_addresses#new
+       edit_blog_address GET    /blog_addresses/:id/edit(.:format)   blog_addresses#edit
+            blog_address GET    /blog_addresses/:id(.:format)        blog_addresses#show
+                         PUT    /blog_addresses/:id(.:format)        blog_addresses#update
+                         DELETE /blog_addresses/:id(.:format)        blog_addresses#destroy
+             users_index GET    /users/index(.:format)               users#index
+              home_index GET    /home/index(.:format)                home#index
+                    root        /                                    home#index
+                    root        /                                    home#index
+        new_user_session GET    /users/sign_in(.:format)             devise/sessions#new
+            user_session POST   /users/sign_in(.:format)             devise/sessions#create
+    destroy_user_session DELETE /users/sign_out(.:format)            devise/sessions#destroy
+           user_password POST   /users/password(.:format)            devise/passwords#create
+       new_user_password GET    /users/password/new(.:format)        devise/passwords#new
+      edit_user_password GET    /users/password/edit(.:format)       devise/passwords#edit
+                         PUT    /users/password(.:format)            devise/passwords#update
+cancel_user_registration GET    /users/cancel(.:format)              devise/registrations#cancel
+       user_registration POST   /users(.:format)                     devise/registrations#create
+   new_user_registration GET    /users/sign_up(.:format)             devise/registrations#new
+  edit_user_registration GET    /users/edit(.:format)                devise/registrations#edit
+                         PUT    /users(.:format)                     devise/registrations#update
+                         DELETE /users(.:format)                     devise/registrations#destroy
+

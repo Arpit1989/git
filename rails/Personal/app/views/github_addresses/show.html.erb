@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Githubadd:</b>
+  <%= @github_address.githubadd %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @github_address.User %>
+</p>
+
+
+<%= link_to 'Edit', edit_github_address_path(@github_address) %> |
+<%= link_to 'Back', github_addresses_path %>
