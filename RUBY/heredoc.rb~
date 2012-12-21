@@ -1,0 +1,7 @@
+#!/usr/bin/ruby -w
+
+print <<EOF
+This is the 1st way of creating
+here document ie. multiple line string.
+EOF
+

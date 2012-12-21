@@ -1,0 +1,23 @@
+#!/usr/bin/ruby -w
+@i=0
+@num = 5
+while @i<@num do
+puts"Inside the loop i =#@i"
+@i+=1
+end
+
+$e=0
+$nums=6
+begin
+puts "inside the loop i = #$e"
+$e +=1
+end while $e<$nums
+
+for i in 5..10
+puts"Value of local variable is #{i}"
+end
+
+(15..20).each do |i|
+puts"value of local variable is #{i}"
+end
+

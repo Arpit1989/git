@@ -1,0 +1,30 @@
+#!/usr/bin/ruby -w
+class Home
+#constructor and setters in ruby by method called initialisation
+        def initialize(no_of_roomates,roomate_name,project)
+        @roomates=no_of_roomates
+        @name=roomate_name
+        @project=project
+        end
+def display_details()
+puts"The no of roomates are #@roomates"
+puts"The name of roomate is #@name"
+puts "The project tagged to is #@project"
+end
+#objects are created for all different inputs 
+room1=Home.new(5,"Arpit","Mckinsey")
+room2=Home.new(5,"Swetank","Agilant")
+room3=Home.new(5,"Akshaya","Virgin Atlantic")
+room4=Home.new(6,"Manleen","SMB's")
+room5=Home.new(6,"Gaurav","Mer's")
+room6=Home.new(2,"Dhiman","lifescience")
+
+#methods are being called by  object
+room1.display_details()
+room2.display_details()
+room3.display_details()
+room4.display_details()
+room5.display_details()
+room6.display_details()
+
+end

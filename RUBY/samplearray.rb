@@ -1,0 +1,16 @@
+#!/usr/bin/ruby -w
+
+array=[ "fred", 10, 3.14, "This is a string", "last element",]
+array.each do |i|
+puts i
+end
+
+hash=colors={"red "=> 0xf00,"greeen "=> 0x0f0,"blue "=> 0x00f}
+hash.each do |key,value|
+print key,"is ",value,"\n"
+end
+
+(10..15).each do |n|
+print n, ' '
+end
+
