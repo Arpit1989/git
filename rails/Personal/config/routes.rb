@@ -10,10 +10,14 @@ Personal::Application.routes.draw do
   end
   root :to => "home#index"
   devise_for :users
-  resources :github_addresses
-
-
   resources :blog_addresses
+  resources :github_addresses do
+    resources :project
+  end
+  
+
+
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
